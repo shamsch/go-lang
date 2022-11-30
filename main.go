@@ -13,7 +13,7 @@ func main() {
 	// read more about different ways % is used in formatting string here: https://golang.org/pkg/fmt/
 	fmt.Printf("Welcome to the %v\n", eventName)
 	fmt.Printf("Total guests allowed: %v\n", totalGuests)
-	fmt.Printf("Ticket price: $%.fv\n", ticketPrice)
+	fmt.Printf("Ticket price: $%.f\n", ticketPrice)
 	fmt.Printf("Tickets left: %v\n", ticketLeft)
 
 	// user name and number of tickets
@@ -29,4 +29,10 @@ func main() {
 
 	// printing user name and number of tickets
 	fmt.Printf("Hi %v, you have booked %v tickets\n", userName, tickets)
+
+	// updating tickets left
+	ticketLeft -= tickets
+
+	// printing tickets left
+	fmt.Printf("Tickets left: %v\n", ticketLeft)
 }
